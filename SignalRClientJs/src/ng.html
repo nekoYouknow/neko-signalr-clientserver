@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neko-signal-test with angularjs</title>
+</head>
+<body ng-app="ngApp" ng-controller="ngCtrl">
+    <h1>SignalR with AngularJs </h1>
+    <ul>
+        <li>
+            This client only 
+            <button ng-click="btnEchoMe_click()">EchoMe</button>
+        </li>
+        <li>
+            This Client only (stream)
+            <button ng-click="btnProgress_click()">Progress</button>
+            <span>{{percentage}}</span>
+        </li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="signalr.js"></script>
+    <script src="ng.js"></script>
+</body>
+</html>
